@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#course-header{
+  background-image: linear-gradient(
+    rgba(115, 185, 197, 0.76),
+    rgba(32, 31, 31, 0.74)),
+  url(https://images.unsplash.com/photo-1692198669686-0a3959951e11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1208&q=80);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+#course-header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.nav-links ul {
+  display: flex;
+  flex-direction: row;
+
+}
+.nav-links ul li{
+padding: 10px;
+list-style-type: none;
+
+}
+.nav-links ul li a{
+  text-decoration: none;
+  color: white;
+}
+.text-box{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+.course{
+  width: 85%;
+  margin: 2% auto;
+}
+.course .row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+.course-col{
+  width: 30%;
+  height: 400px;
+  padding: 1%;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  
+}
+.course-col img{
+  width: 100%;
+  height: 75%;
+}

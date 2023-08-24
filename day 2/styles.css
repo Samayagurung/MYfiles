@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* background-color: beige; */
+  background-image: url("https://images.unsplash.com/photo-1691466517945-0f9cc5b47539?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+}
+h1, p{
+  font-size: 34px;
+}
+
+
+#first{
+  color: green;
+  background-color: yellow;
+}
+
+.head{
+  color: red;
+}
+

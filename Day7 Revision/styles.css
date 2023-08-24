@@ -1,0 +1,14 @@
+body{
+  background-color: bisque;
+}
+
+ul li{
+  list-style-type: armenian;
+}
+#head{
+  color: green;
+
+}
+.description{
+  color: red;
+}

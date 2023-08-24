@@ -1,0 +1,60 @@
+/* 
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+.nav{
+background-color: green;
+overflow: hidden;
+}
+.nav div{
+  padding: 15px;
+}
+.nav a:hover{
+  background-color: white;
+  color: orange;
+}
+.nav a{
+text-decoration: none;
+color: white;
+padding: 12px 12px;
+}
+.nav .floatLeft{
+  float: left;
+}
+.nav .floatRight{
+  float: right;
+} */
+
+.container{
+ 
+  border: 1px solid red;
+  height: 600px;
+  width: 600px;
+  margin: auto;
+}
+.cont{
+  display: inline-block;
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+}
+.container-1{
+  position: fixed;
+  bottom: 15px;
+  right: 2px;
+}
+.container-2{
+  position: sticky;
+  top: 0px;
+}
+.container-3{
+  position: relative;
+  /* relative moves from its original place  */
+  top: 20px;
+}
+.container-4{
+  position: absolute; 
+  /* abolute moves from the  parent if the parent is not relative it picks body  */
+  left: 20px;
+}

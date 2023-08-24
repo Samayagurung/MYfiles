@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.container{
+  display: flex;
+}
+.container .sidebar{
+  flex-basis: 20%;
+  background-color: black;
+  padding: 20px;
+  height: 100vh;
+}
+.container .sidebar ul{
+margin: 10px 0;
+}
+.container .sidebar ul li a{
+color: white;
+text-decoration: none;
+}
+.container .content{
+  padding: 20px;
+  flex: 1;
+}
+.container .content .header{
+  margin-bottom: 20px;
+}
+.container .content .form-section{
+  background-color: bisque;
+  padding: 20px;
+  border-radius: 5px;
+}
+.flex-form{
+  display: flex;
+  flex-direction: column;
+}
+.form-row-container{
+  display: flex;
+  margin: 15px;
+  row-gap: 20px;
+  justify-content: space-between;
+}
+.form-column{
+  width: 45%;
+}
+.form-row label{
+  font-weight: bold;
+}
+
+button{
+  padding: 10px 20px;
+  background-color: rgb(85, 84, 84);
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+input, textarea, select{
+padding: 10px;
+border: 1 px solid grey;
+border-radius: 3px;
+width: 100%;
+}

@@ -1,0 +1,95 @@
+
+.percent-50{
+  background-color: red;
+  color: white;
+  width: 50%;
+}
+.viewWidth-50{
+  background-color: forestgreen;
+  color: white;
+  width: 50vw;
+}
+.parent{
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+}
+
+.parent-percent-50{
+  background-color: red;
+  color: white;
+  width: 50%;
+  height: 50%;
+}
+.parent-viewwidth-50{
+  background-color: forestgreen;
+  color: white;
+  width: 50vw;
+  /* height: 50vh; */
+}
+
+
+.parent-em{
+  font-size: 10px;
+}
+.parent-em-1{
+  font-size: 3em;
+
+}
+.parent-em-2{
+  font-size: 2em;
+}
+p{
+  font-size: 2em;
+}
+
+.dev{
+  background-color: brown;
+  color: white;
+  display: none;
+}
+/* Extra small devices  */
+@media only screen and (max-width:576px){
+  .ex-small-dev{
+    display: block;
+    font-size: 20px;
+    color: bisque;
+  }
+}
+/* Small devices(tablets and small laptops)  */
+
+@media only screen and (min-width:577px) and (max-width:768px){
+  .small-dev{
+    display: block;
+    font-size: 40px;
+    color: gold;
+  }
+}
+/* Medium devices(laptops and desktops) */
+
+@media only screen and (min-width:769px) and (max-width:992px){
+  .med-dev{
+    display: block;
+    font-size: 60px;
+    color: greenyellow;
+  }
+}
+/* Large devices(large desktops and TVs) */
+
+@media only screen and (min-width:993px) and (max-width:1200px){
+  .large-dev{
+    display: block;
+    font-size: 80px;
+    color: pink;
+  }
+}
+
+/* Extra Large devices(High resolution monitors)  */
+
+@media only screen and (min-width:1201px){
+  .ex-large-dev{
+    display: block;
+    font-size: 100px;
+    color: black;
+  }
+}

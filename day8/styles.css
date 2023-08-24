@@ -1,0 +1,27 @@
+.container{
+  border: 1px solid green;
+  /* height: 500px; */
+  width: 650px;
+  margin: auto;
+  display: flex;
+  /* flex always in parent  */
+  flex-direction:row;
+  justify-content:space-between;
+  align-items: center;
+  /* gap: 10px; */
+  flex-wrap: wrap;
+}
+.item{
+  border: 1px solid crimson;
+  height: 80px;
+  width: 80px;
+}
+.itemsmid{
+  display: flex;
+}
+.itemsright{
+  display: flex;
+}
+.itemleft{
+  display: flex;
+}

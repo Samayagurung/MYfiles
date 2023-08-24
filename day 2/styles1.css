@@ -1,0 +1,114 @@
+*{
+  background-color: black;
+  
+}
+p{
+  display: inline;
+  color: white;
+ 
+}
+h1{
+  color: white;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid  white;
+}
+.head{
+  display: block;
+  color: white;
+  font-size: 28px;
+}
+.customerName{
+  margin-bottom: 10px;
+}
+#name{
+  background-color: white;
+  border-radius: 5px;
+  height: 18px;
+}
+
+#address_1{
+  display: block;
+  width: 400px;
+  height: 18px;
+background-color: white;
+border-radius: 5px;
+}
+#address_2{
+  display: block;
+  width: 400px;
+  height: 18px;
+  background-color: white;
+  border-radius: 5px;
+}
+#city{
+  background-color: white;
+  border-radius: 5px;
+  height: 18px;
+}
+#state{
+  background-color: white;
+  border-radius: 5px;
+  height: 18px;
+}
+#zip{
+  background-color: white;
+  border-radius: 5px;
+  height: 18px;
+}
+#country{
+  display: block;
+  width:320px;
+  height: 18px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.form-select{
+  background-color: white;
+}
+.contact{
+  margin-bottom: 10px;
+}
+#phone{
+  background-color: white;
+  border-radius: 5px;
+}
+#email{
+  background-color: white;
+  border-radius: 5px;
+}
+.personalDetails{
+  margin-bottom: 10px;
+}
+#male{
+  color: white;
+}
+#female{
+ color: white;
+}
+#others{
+  color: white;
+}
+.Good{
+  color: white;
+}
+.Bad{
+  color: white;
+}
+.Excellent{
+  color: white;
+}
+.rate{
+  padding-bottom: 10px;
+}
+#submit{
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  border-color: white;
+  text-align: center;
+  margin-left: 250px;
+  height: 32px;
+  font-size: 20px;
+}
