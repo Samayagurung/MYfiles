@@ -1,0 +1,145 @@
+  @import url('https://fonts.googleapis.com/css2?family=Handjet&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    font-family: 'Handjet', cursive;
+  }
+
+  html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+  }
+
+  p{
+    color: rgb(85, 85, 85);
+  }
+
+  a, 
+  .btn{
+    transition: all ease 300ms;
+  }
+
+  nav,
+  .nav-links{
+    display: flex;
+  }
+
+  nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+  }
+
+  .nav-links{
+    gap: 3.2rem;
+    list-style: none;
+    font-size: 2.4rem;
+  }
+  .nav-links li a{
+    color: black;
+    text-decoration: none;
+  }
+  .nav-links li a:hover{
+    color: rgb(80, 80, 80);
+    text-decoration: underline;
+    text-decoration-color: #0cc0df;
+    text-underline-offset: 1rem;
+  }
+ 
+  .logo:hover{
+    cursor: pointer;
+  }
+  .hamburger-nav{
+display: none;
+  }
+
+  /* Profile Section  */
+
+  .section_pic-container img{
+    height: 50vh;
+  }
+
+  .profile{
+ border: 2px solid lightgray;
+ box-shadow: 1px 1px 5px rgba(0, 0, 0, 150);
+ display: flex;
+ justify-content: space-evenly;
+
+ background-color: #0cc0df;
+ border-radius: 5px;
+ width: 80vw;
+ height: 80vh;
+ margin-left: 150px;
+  }
+
+  .profile .section_pic-container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+  }
+
+ .profile .section_text{
+  align-self: center;
+  text-align: center;
+ }
+ .profile .section_text p{
+  font-weight: 600;
+ }
+ .section_text_p1{
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+ }
+ .section_text_p2{
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 1.7rem;
+  color: white;
+ }
+ .title{
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(53, 53, 53);
+ }
+ .social-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 1.5rem;
+ }
+ .icon{
+  cursor: pointer;
+  height: 3.5rem;
+ }
+
+ .btn-container{
+  display: flex;
+  gap: 1.6rem;
+  justify-content: center;
+ }
+
+ .btn{
+  font-weight: 600;
+  padding: 1rem;
+  width: 12rem;
+  border-radius: 3rem;
+ }
+
+ .btn-color-1,
+ .btn-color-2{
+border: rgb(53, 53, 53)0.1rem solid;
+box-shadow: 1px 1px 5px;
+ }
+ .btn-color-1:hover,
+ .btn-color-2:hover{
+cursor: pointer;
+background-color: #0cc0df;
+color: white;
+border: 1px solid white;
+ }
+
+
