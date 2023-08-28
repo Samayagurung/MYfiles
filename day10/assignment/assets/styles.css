@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section{
+height: 100vh;
+width: 100vw;
+display: grid;
+grid-template-rows:140px 100px 10fr 6fr 50px ;
+grid-template-columns: 1fr 1fr ;
+}
+.product img{
+  height: 150px;
+ }
+ .header{
+  background-color: rgb(56, 55, 55);
+  grid-column-start:1 ;
+  grid-column-end: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ .header h1{
+  color: white;
+  padding: 8px;
+ }
+.header p{
+  color: white;
+}
+ .nav-links{
+  background-color: rgb(80, 79, 79);
+  grid-column-start:1 ;
+  grid-column-end: 4;
+ }
+ .nav-links ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .nav-links ul li{
+  list-style-type: none;
+  padding: 10px;
+  margin-top: 10px;
+ }
+ .nav-links ul li a{
+  color: white;
+  text-decoration: none;
+ }
+.product{
+  border: 2px solid grey;
+  margin: 20px;
+  padding: 15px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 100);
+  border-radius: 5px;
+ }
+ .product h3, p{
+  padding-bottom: 10px;
+  padding-top: 5px;
+ }
+.product-1{
+ grid-column-start:1 ;
+ grid-column-end: 2;
+}
+.product-2{
+  grid-column-start:2 ;
+  grid-column-end: 4;
+}
+.product .btn{
+  background-color:  rgb(56, 55, 55);
+  color: white;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  border-style: none;
+  font-size: 12px;
+}
+.featured-products{
+background-color: rgb(228, 225, 225);
+grid-column-start:1 ;
+grid-column-end: 4;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.featured-products h2{
+  padding: 10px;
+}
+.featured-products p{
+ padding-bottom: 15px;
+}
+.featured-products .btn{
+  background-color:  rgb(56, 55, 55);
+  color: white;
+  border-radius: 5px;
+  width: 120px;
+  height: 30px;
+  border-style: none;
+  font-size: 13px;
+}
+.footer{
+background-color: rgb(56, 55, 55);
+grid-column-start:1 ;
+grid-column-end: 4;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.footer p{
+  padding-top: 10px;
+  color: white;
+}
