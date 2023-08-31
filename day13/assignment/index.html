@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <title>Bootstrap NAVBAR/CAROUSAL/FORM</title>
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-light-subtle">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/LOGO_1.png" alt="Own Logo" width="150">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="d-flex" style="width: 500px;">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active me-3" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-3" href="#surveyform">Survey form</a>
+          </li>
+        <form role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End  -->
+
+  <!-- Carousal Start  -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner m-auto">
+      <div class="carousel-item active">
+        <img src="./assets/c1.avif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide </h5>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/c2.avif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide </h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/c3.avif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide </h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Carousal End  -->
+
+  <!-- Survey Form Start  -->
+  <div class="card m-auto mt-5 mb-5 bg-light-subtle" id="surveyform" style="width: 50rem; height: 70rem;">
+    <div class="card-header">
+      <h2>Survey Form</h2>
+    </div>
+    <div class="card-body">
+      <form action="">
+        <label class="ms-2 text-primary fs-4">
+        Customer Name
+        </label>
+        <div class="container ms-2">
+          <div class="row gap-3 mt-3">
+            <input type="text" class="firstname col-5" placeholder="Enter your first name">
+            <input type="text" class="lastname col-5" placeholder="Enter your last name">
+          </div>
+          <label for="" class="text-success mt-3 fs-4">
+           Address
+          </label>
+          <div class="row mt-3 gap-3">
+            <input type="text" class="address1 col-11" placeholder="Street address 1">
+            <input type="text" class="address1 col-11" placeholder="Street address 2">
+          </div>
+          <div class="row mt-3 gap-3">
+            <input type="text" class="city col-5" placeholder="City">
+            <input type="text" class="state col-5" placeholder="State">
+            <input type="text" class="zip col-5" placeholder="Zip">
+            <select class="form-select" style="border: 1px solid gray;">
+              <option selected>Select Country</option>
+              <option value="1">Nepal</option>
+              <option value="2">China</option>
+              <option value="3">India</option>
+              <option value="4">USA</option>
+            </select>
+          </div>
+          <label for="" class="text-danger mt-3 fs-4">
+            Contact
+          </label>
+          <div class="row mt-3 gap-3">
+            <input type="text" class="phone col-5" placeholder="Phone number">
+            <input type="text" class="email col-5" placeholder="Email address">
+          </div>
+          <label class="text-warning mt-3 fs-4">
+            Personal Details
+          </label>
+          <div class="row mt-3 ms-1">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="male">
+              <label class="form-check-label">
+                Male
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="female">
+              <label class="form-check-label">
+                Female
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gender" id="other">
+              <label class="form-check-label">
+                Others
+              </label>
+            </div>
+          </div>
+          <label class="text-secondary mt-3 fs-4">
+            Ratings
+          </label>
+          <div class="row mt-3">
+            <label for="">
+              Rating 1:
+            </label>
+            <div class="d-flex mb-2">
+              <div class="form-check">
+                <input type="radio" name="rating">
+                <label for="">Bad</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="rating">
+                <label for="">Good</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="rating">
+                <label for="">Excellent</label>
+              </div>
+            </div>
+            <label for="">
+              Rating 2:
+            </label>
+            <div class="d-flex mb-2">
+              <div class="form-check">
+                <input type="radio" name="rating2">
+                <label for="">Bad</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="rating2">
+                <label for="">Good</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="rating2">
+                <label for="">Excellent</label>
+              </div>
+            </div>
+            <label for="">
+              Rating 3:
+            </label>
+            <div class="d-flex mb-2">
+              <div class="form-check">
+                <input type="radio" name="rating3">
+                <label for="">Bad</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="rating3">
+                <label for="">Good</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="rating3">
+                <label for="">Excellent</label>
+              </div>
+            </div>
+            <label for="">
+              Rating 4:
+            </label>
+            <div class="d-flex mb-2">
+              <div class="form-check">
+                <input type="radio" name="rating4">
+                <label for="">Bad</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="rating4">
+                <label for="">Good</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="rating4">
+                <label for="">Excellent</label>
+              </div>
+            </div>
+            <label for="">
+              Rating 5:
+            </label>
+            <div class="d-flex">
+              <div class="form-check">
+                <input type="radio" name="rating5">
+                <label for="">Bad</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="rating5">
+                <label for="">Good</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" name="rating5">
+                <label for="">Excellent</label>
+              </div>
+            </div>
+          </div>
+          <div class="container mt-3 " style="width: 5rem;">
+            <div class="btn btn-primary">Submit</div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- Survey Form End  -->
+
+</body>
+</html>
