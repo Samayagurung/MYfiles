@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Tektur', cursive;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
+  font-size: 16px;
+}
+.navbar-brand img{
+  width: 8rem;
+}
+.navbar-nav{
+  margin: auto;
+}
+.nav-item a{
+  margin: 10px 16px;
+}
+.navbar-nav>.nav-item a:hover{
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+  color: #6caddf;
+  transition: all 1s ease-out;
+}
+.social-links a{  color: #6f6f6f;
+  padding-left: 10px;
+  display: inline-block;
+  line-height: 0px;
+  transition: 0.3s;
+  font-size: 18px;
+}
+.title-h1{
+  color: #6caddf;
+}
