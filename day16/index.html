@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT ARRAY & OBJECT</title>
+  </head>
+  <body>
+    <script>
+      // Comparison Operator
+
+      let a = 30;
+      let b = "30";
+      // equal value
+      // console.log('a == b',a == b);
+      // not equal value
+      console.log("a != b", a != b);
+      // equal type and equal value
+      // console.log('a === b',a === b);
+      // not equal type and equal value
+      console.log("a !== b", a !== b);
+
+      let x = 18;
+      console.log("x>=18", x >= 18);
+      console.log("x<18", x < 18);
+
+      // Concat string
+      let text1 = "A quick brown fox";
+      let text2 = "jumps over lazy dog";
+
+      const thirdString = text1 + " " + text2;
+      console.log(thirdString);
+
+      console.log("a > b", "a" > "b");
+      console.log("a < b", "a" < "b");
+
+      // Converting string to number
+      const string1 = "ABC";
+      const string2 = "55";
+      // Number(variable name or number in string);
+      const changeString1Num = Number(string1);
+      const changeString2Num = Number(string2);
+
+      console.log(string1, changeString1Num);
+      console.log(typeof string2, typeof changeString2Num);
+
+      // Logical Operators
+
+      //Logical Not
+      let email = "";
+      let password = "sss";
+
+      console.log("!email", !email);
+      console.log("!password", !password);
+
+      //Logical And
+      let student1 = 21;
+      let student2 = 17;
+
+      console.log("You can enter a club", student1 >= 18 && student2 >= 18);
+
+      //Logical Or
+      console.log("You can enter a club", student1 >= 18 || student2 >= 18);
+
+      //Objectt -> Arrays
+      let carModel1 = {
+        "First Name": "Lamborgini",
+        "Last Name": "VENOM",
+        madeYear: 2020,
+        madeIn: "Italy",
+        kilometersRun: 9000,
+        color: "yellow",
+        isSold: false,
+        address: {
+          city: "Washington",
+          postalCode: "999",
+          details: {
+            ownerName: "Samaya",
+            phoneNum: 999,
+          },
+        },
+      };
+      console.log(carModel1.address.details.ownerName);
+      console.log(carModel1["address"]["details"]["phoneNum"]);
+      console.log(carModel1["madeYear"] > 2015);
+      console.log(carModel1["First Name"]);
+      console.log(carModel1["Last Name"]);
+
+      // Object cant be equal
+      let av = {
+        test: "name",
+      };
+      let av1 = {
+        test: "name",
+      };
+      console.log(av === av1);
+      // strings can be equal
+      console.log(av.test === av1.test);
+
+      // Array -> Object
+      const arr = [1, 2, 3, 4, 5];
+
+      console.log(arr);
+      console.log(arr[0]); // starts with 0 (first index=0) & (last index=length - 1)
+      console.log(arr[1]);
+      console.log(arr[4]);
+      console.log(arr[5]); // undefined
+
+      const stud=["Sam", "Ram", "Sita", "Hari"];
+
+
+    </script>
+  </body>
+</html>
