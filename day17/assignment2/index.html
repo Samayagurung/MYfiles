@@ -3,17 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignmentt 2</title>
+    <title>Assignment2</title>
   </head>
   <body>
     <script>
-      const number = prompt("Enter a number from");
+      const number = prompt("Enter a number between 1-100");
       const num = Number(number);
 
-      function calculateSeriesSum(num) {
-        console.log("Sum of series till 100 is", (num * (num + 1)) / 2);
+      function calculateSeriesSum() {
+        document.write("The sum of series till 100 is ", (num * (num + 1)) / 2);
       }
-
       calculateSeriesSum(num);
     </script>
   </body>
