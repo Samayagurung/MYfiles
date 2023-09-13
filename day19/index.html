@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const arr = ["Ram", "Sita", "Test"];
+
+      const length = arr.length;
+      for (let i = 0; i < length; i++) {
+        console.log(arr[i]);
+      }
+
+      //Array methods
+      const numbers=[1,2,3,4,5,6,7,8,9]
+      //length
+      console.log(numbers.length);
+      //push - add a new element to an array (end
+      numbers.push(22);
+      console.log(numbers)
+      //pop -remove a new element to an array (end)
+      numbers.pop()
+      console.log(`Popped ${numbers}`)
+      //unshift - add a new element to an array (beginning)
+      numbers.unshift('New data added')
+      console.log(numbers)
+      //shift - remove a new element to an array (beginning)
+      numbers.shift()
+      console.log(numbers)
+      //concat -- merge two arrays
+      const  concatArr= numbers.concat(arr);
+      console.log(concatArr)
+
+     // return function
+     function concatString(str1,str2,str3){
+      return str1+str2+str3;
+     }
+      console.log(concatString("We are", " concatting", " new string"))
+
+     //sort
+     const nums1=[100,55,77,22,1,4]    
+
+     const sortedNumber = nums1.sort(function (num1,num2){
+      return num2 - num1;
+     })
+
+     console.log(`${sortedNumber[0]} is our maximum number`)
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions/varletconst/SyncronousAsyncProgramming/API calls</title>
+  </head>
+  <body>
+    <script>
+      // const currDate = new Date();
+
+      // const calculateCurrentYear = (date) => {
+      //   const currYear = date.getFullYear();
+      //   return currYear;
+      // };
+      // console.log(calculateCurrentYear(currDate))
+      // const d= calculateCurrentYear(currDate);
+
+      // Higher Order array methods - forEach, map, filter, reduce
+      const array = [
+        {
+          id: 1,
+          production: "Phone",
+          description: "loremloremlorem",
+          price: 1000,
+          currency: "USD",
+          address: {
+            city: "Washington",
+            postalCode: 2000,
+          },
+          discountPercent: 20,
+          rating: 3,
+        },
+        {
+          id: 2,
+          production: "Phone2",
+          description: "loremloremlorem",
+          price: 10000,
+          currency: "MXN",
+          address: {
+            city: "Washington",
+            postalCode: 2000,
+          },
+          discountPercent: 30,
+          rating: 4,
+        },
+        {
+          id: 3,
+          production: "Phone3",
+          description: "loremloremlorem",
+          price: 15000,
+          currency: "NPR",
+          address: {
+            city: "kathmandu",
+            postalCode: 2000,
+          },
+          discountPercent: 70,
+          rating: 1,
+        },
+        {
+          id: 4,
+          production: "Phone4",
+          description: "loremloremlorem",
+          price: 1000,
+          currency: "USD",
+          address: {
+            city: "Washington",
+            postalCode: 2000,
+          },
+          discountPercent: 30,
+          rating: 4,
+        },
+        {
+          id: 5,
+          production: "Phone5",
+          description: "loremloremlorem",
+          price: 30000,
+          currency: "MXN",
+          address: {
+            city: "Washington",
+            postalCode: 2000,
+          },
+          discountPercent: 30,
+          rating: 2,
+        },
+      ];
+      
+      // Products whose price is greather than 10000
+      const data = array.filter((item,i)=>{
+        return item.price > 10000;
+
+      })
+      console.log('Products whose price is greater than 1000 are', data)
+
+      // Products whose city is Kathmandu
+      const data2 = array.filter((item,i)=>{
+            return item.address.city === 'kathmandu'
+      })
+      console.log("Products whose city is kathmandu", data2)
+
+      // Products whose rating are less than 3
+      const data3 = array.filter((item,i)=>{
+        return item.rating < 3
+      })
+      console.log("Products whose rating are less than 3", data3)
+
+      // Products whose discount percent is greater than 50
+      const data4 = array.filter((item,i)=>{
+        return item.discountPercent > 50
+      })
+      console.log("Products whose discount percent is greater than 50", data4)
+
+      // Return object of name and address using map method
+      const data5 = array.map((item,i)=>{
+        return{
+          name: item.production,
+          address: item.address.city
+        }
+      })
+      console.log('Return object of name and address using map method',data5)
+ </script>
+  </body>
+</html>
