@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smartphone</title>
+</head>
+<body>
+  <script>
+    fetch('https://dummyjson.com/products')
+    .then((val)=>{
+      return val.json();
+    }).then((val)=>{
+      const filteredProducts=val.products.filter((item)=>{
+       return item.category === "smartphones"
+      })
+      console.log("Filter the products by smartphones: ",filteredProducts)
+    })
+  </script>
+</body>
+</html>

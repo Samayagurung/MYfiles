@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unique data from an array of objects</title>
+  </head>
+  <body>
+    <script>
+      const data = [
+        { id: 1, name: "John" },
+        { id: 2, name: "Jane" },
+        { id: 1, name: "John" },
+        { id: 3, name: "Bob" },
+        { id: 4, name: "Alice" },
+      ];
+      const uniqueData = data.filter((value, index) => {
+        return uniqueData.indexOf(value) === 0;
+      });
+      console.log(uniqueData);
+    </script>
+  </body>
+</html>
