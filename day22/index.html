@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="hello-world">Hello World</h1>
+   <h5 id="ok">Samaya</h5>
+  <form action="">
+    <input id="number" type="text" value="hello world">
+  </form>
+  <script>
+    // DOM
+    document.title = "Hey whats up";
+    console.log(document.getElementById("hello-world"));
+
+    const helloWorldh1=document.getElementById("hello-world");
+    const helloWorldh5=document.getElementById("ok");
+    helloWorldh1.innerText="Test OK";
+    helloWorldh5.innerText="Gurung";
+
+    const inputTag = document.getElementById("number");
+    console.log(inputTag)
+    inputTag.value = "Ok test"
+    
+  </script>
+</body>
+</html>

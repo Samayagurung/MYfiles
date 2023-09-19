@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revision</title>
+  </head>
+  <body>
+    <script>
+      //map, filter, forEach -> Higher order array methods
+      const num = [10, 30, 50, 41];
+
+      //forEach -> loop only
+      num.forEach(function (val) {
+        if (val % 2 === 0) {
+          console.log("even");
+        }
+      });
+
+      //map -> customize and loop
+      const a = num.map(function (val) {
+        if (val % 2 === 0) {
+          return `value is even: ${val}`;
+        }
+      });
+      console.log(num);
+      console.log(a);
+
+      // 2nd Example
+      const backendResp = [
+        {
+          firstName: "Ram",
+          lastName: "Thapa",
+        },
+        {
+          firstName: "Sita",
+          lastName: "Thapa",
+        },
+      ];
+
+      const newData = backendResp.map((val) => {
+        return { fullName: `${val.firstName} ${val.lastName}` };
+      });
+      console.log(newData);
+
+      // filter
+      const newData2 = backendResp
+        .filter((val) => {
+          return val.firstName === "Ram";
+        })
+        .map((val) => {
+          return { fullName: `${val.firstName} ${val.lastName}` };
+        });
+      console.log("newdata2", newData2);
+
+      // callBack function
+      const addition = (a, b, callBack) => {
+        setTimeout(()=>{
+          callBack(a + b);
+        }, 1000)
+      };
+      const logger = (value) => {
+        console.log(`Added value is following `, value);
+      };
+      const data = addition(2, 3, logger);
+    
+      
+    </script>
+  </body>
+</html>
