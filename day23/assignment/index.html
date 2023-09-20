@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment</title>
+</head>
+<body>
+  <script>
+    // first n fibonnacci sequence:
+
+    const number = prompt("Enter a number");
+    let n1=0, n2=1, nextTerm;
+
+    console.log(n1); // Prints 0
+    console.log(n2); // Prints 1
+
+    nextTerm=n1+n2; // output 1
+
+    while(nextTerm<=number){
+      console.log(nextTerm) 
+
+      n1=n2; 
+      n2=nextTerm;
+      nextTerm=n1+n2; 
+    }
+
+  </script>
+</body>
+</html>

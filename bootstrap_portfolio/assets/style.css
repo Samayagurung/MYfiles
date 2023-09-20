@@ -40,3 +40,18 @@ body{
   color: #6caddf;
 }
 
+.card{
+  transition: all 0.3s;
+}
+
+.card:hover{
+  transform: scale(1.15);
+}
+
+.nav_hover{
+  transition: all 0.3s;
+}
+
+.nav_hover:hover{
+  transform: scale(1.15);
+}
