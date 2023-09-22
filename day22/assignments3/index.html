@@ -7,21 +7,37 @@
   </head>
   <body>
     <script>
+      // const text =
+      //   "This is a simple example. This is just an example of word frequency.";
+      // const wordSplit = text.split(" ");
+      // console.log(wordSplit)
+
+      // let wordFrequency = {};
+
+      // for (let i of wordSplit) {
+      //   if (wordFrequency[i]) {
+      //     wordFrequency[i]++;
+      //   } else {
+      //     wordFrequency[i] = 1;
+      //   }
+      // }
+      // console.log(wordFrequency);
+
       const text =
         "This is a simple example. This is just an example of word frequency.";
-      const wordSplit = text.split(" ");
-      console.log(wordSplit)
-      
-      let wordFrequency = {};
 
-      for (let i of wordSplit) {
-        if (wordFrequency[i]) {
-          wordFrequency[i]++;
+      const wordSplit = text.split(" ");
+
+      let WordCounter = [];
+
+      for (i of wordSplit) {
+        if (WordCounter[i]) {
+          WordCounter[i]++;
         } else {
-          wordFrequency[i] = 1;
+          WordCounter[i] = 1;
         }
       }
-      console.log(wordFrequency);
+      console.log(WordCounter);
     </script>
   </body>
 </html>
