@@ -21,79 +21,22 @@
         <div class="card">
           <div class="card-body">
             <h2 class="title">CREATE ACCOUNT</h2>      
-            <div class="row mb-4 mt-3">
-              <div class="col-md-6 ">
-                <div class="form-outline">
-                  <input type="text" id="firstName" class="form-control form-control-lg" placeholder="First Name">
-                </div>
-              </div>
-              <div class="col-md-6 ">
-                <div class="form-outline">
-                  <input type="text" id="lastName" class="form-control form-control-lg" placeholder="Last Name">
-                </div>
-              </div>
+            <div class="form-outline mb-3">
+              <input required type="text" id="fullName" class="form-control form-control-lg" placeholder="Full Name">
             </div>
             <div class="form-outline mb-3">
-              <input type="email" id="emailAddress" class="form-control form-control-lg" placeholder="Email Address">
+              <input required type="email" id="emailAddress" class="form-control form-control-lg" placeholder="Email Address">
             </div>
             <div class="form-outline mb-3">
-              <input type="password" id="password" class="form-control form-control-lg" placeholder="Password">
+              <input required type="password" id="password" class="form-control form-control-lg" placeholder="Password">
             </div>
-            <div class="d-md-flex justify-content-start align-items-center mb-3 py-2">
-              <h6 class="mb-0 me-3">Gender:</h6>
-              <div class="form-check form-check-inline">
-                <input type="radio" class="form-check-input" name="radioOption" id="maleGender" value="option1">
-                <label for="maleGender" class="form-check-label">Male</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input type="radio" class="form-check-input" name="radioOption" id="femaleGender" value="option2">
-                <label for="femaleGender" class="form-check-label">Female</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input type="radio" class="form-check-input" name="radioOption" id="other" value="option3">
-                <label for="other" class="form-check-label">Other</label>
-              </div>
+            <div class="input-group gap-3 align-items-center mb-3" id="dob">
+              <label for="dob" class="form-label">Date Of Birth:</label>
+              <input required type="date" class="form-control" id="dob"/>
             </div>
-            <div class="row mb-3">
-              <div class="col-md-6">
-                <select class="form-select">
-                  <option value="1">State</option>
-                  <option value="2">Option 1</option>
-                  <option value="3">Option 2</option>
-                  <option value="4">Option 3</option>
-                  <option value="5">Option 4</option>
-                </select>
-              </div>
-              <div class="col-md-6">
-                <select class="form-select">
-                  <option value="1">City</option>
-                  <option value="2">Option 1</option>
-                  <option value="3">Option 2</option>
-                  <option value="4">Option 3</option>
-                  <option value="5">Option 4</option>
-                </select>
-              </div>
-            </div>
-            <div class="row mb-3">
-              <div class="col-md-3">
-                <input type="number" id="code" class="form-control form-control-lg" placeholder="Code +">
-              </div>
-              <div class="col-md-9">
-                <input type="number" id="phoneNumber" class="form-control form-control-lg" placeholder="Phone Number">
-              </div>
-            </div>
-            <div class="input-group gap-3 align-items-center mb-3" id="datepicker">
-              <h6>Date of Birth  <i class="fa fa-calendar"></i></h6>
-              <input type="text" class="form-control form-control-lg">
-            </div>
-            <div class="form-check d-flex mb-4 ">
-              <input type="checkbox" class="form-check-input me-2" value="">
-              <label class="form-check-label">
-                I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
-              </label>
-            </div>
-              <button type="button"
-                class="btn button btn-lg text-white w-100">Register</button>
+              <button type="submit"
+               onclick="signupHandler(event)" class="btn button btn-lg text-white w-100">Register</button>
+               <span class="text-danger" id="arr-message"></span>
             <p class="text-center text-muted mt-3">Have already an account? <a href="#!"
                 class="fw-bold text-body"><u>Login here</u></a></p>
           </div>
@@ -103,9 +46,7 @@
     </div>
   </div> 
  </div>
-  
-
 </section>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
 </body>
 </html>
